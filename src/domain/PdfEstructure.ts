@@ -22,8 +22,8 @@ export const sign = async ( signFile : File , fileList : FileList)=>{
          if(pages.length == 1){
                 const { width, height } = pages[0].getSize();
                 pages[0].drawImage(pngImage, {
-                    x: width - 200,
-                    y: height - (200 / pngAspectRatio),
+                    x: width - 550,
+                    y: height - 550 - (200 / pngAspectRatio),
                     width: 200,
                     height: 200 / pngAspectRatio,
                 });
